@@ -1,0 +1,16 @@
+// Function for square root
+function squareRoot() {
+    const display = document.getElementById('display');
+    const number = parseFloat(display.value);
+    if (number >= 0) {
+        display.value = Math.sqrt(number);
+    } else {
+        display.value = 'Error';
+    }
+}
+
+// Add event listener to the square root button
+const sqrtButton = document.getElementById('sqrt-button');
+sqrtButton.addEventListener('click', squareRoot);
+
+// Implement other scientific functions in a similar manner
